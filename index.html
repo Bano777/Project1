@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quaid's Biography</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./code.jquery.com_jquery-3.7.1.min.js"></script>
+</head>
+<body>
+     <!-- NavBar Section -->
+<section>
+    <div class="navbar">
+        <div class="logo"><h1><i class="fa-solid fa-flag" style="font-size:35px;color: darkgreen;"></i>Pakistan</h1></div>
+        <div class="links">
+            <ul>
+                <li><a href="">All</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Struggle</a></li>
+                <li><a href="">Politics</a></li>
+                <li><a href="">Biography</a></li>
+                <li><a href="">Highlights</a></li>
+            </ul>
+        </div>
+        <div class="btn">
+        <button id="day"><i class="fa-solid fa-sun" style="font-size:22px; color:yellow;"></i> Day Mode</button>
+        <button id="night"><i class="fa-solid fa-moon" style="font-size:22px; color:grey"></i> Night Mode</button>
+        </div>
+    </div>
+</section>
+ <!-- Hero-Image Section -->
+ <section>
+    <div class="hero-image">
+        <div class="left">
+            <div class="heading-top">
+                <h1>Our Great Leader</h1>
+            </div>
+            <div class="para"><p>Muhammad Ali Jinnah was a barrister, politician and the founder of Pakistan. Jinnah served as the leader of the All-India Muslim League from 1913 until the inception of Pakistan on 14 August 1947, and then as the Dominion of Pakistan's first governor-general until his death. Wikipedia
+                Born: December 25, 1876, Karachi
+                Died: September 11, 1948, Karachi
+                Spouse: Rattanbai Jinnah (m. 1918–1929), Emibai Jinnah (m. 1892–1893)
+                Siblings: Fatima Jinnah, Maryam Bai Jinnah, Shireen Jinnah, Ahmad Ali Jinnah, Bunde Ali Jinnah, Rahmat Ali Jinnah
+                Children: Dina Wadia
+                Parents: Poonja Jinnah, Mithibai Jinnah
+                Previous office: Governor-General of Pakistan (1947–1948)He is revered as the father of Pakistan. He also sought the political union of Hindus and Muslims, which earned him the title of “the best ambassador of Hindu-Muslim unity.”</p></div>
+        </div>
+        <div class="right"></div>
+    </div>
+ </section>
+
+
+<script>
+    $(document).ready(function(){
+        $('#day').click(function(){
+        $("body, .hero-image, .navbar").css('background-color','white')
+        $("body, .hero-image, .navbar").css('color','black')
+        $("body").css('font-family','sans-serif')
+        $("body, .hero-image").css('transition','3s')
+
+        });
+       });
+
+       $(document).ready(function(){
+        $('#night').click(function(){
+        $("body, .hero-image, .navbar").css('background-color','black')
+        $("body, .hero-image, .navbar").css('color','white')
+        $("body").css('font-family','sans-serif')
+        $("body, .hero-image").css('transition','3s')
+
+        });
+       });
+</script>
+</body>
+</html>
